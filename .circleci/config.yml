@@ -9,8 +9,7 @@ jobs:
     steps:
       - node/install
       - checkout
-      - aws-cli/setup
-      - run: 
-        name: "test pipeline"
-        command: |
-            echo "hello folks"  
+      - run:
+          name: Front-End Install
+          command: |
+            echo "hello world"
