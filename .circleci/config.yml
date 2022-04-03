@@ -10,6 +10,6 @@ jobs:
       - node/install
       - checkout
       - run: 
-      name: "test pipeline"
-      command: |
-          echo "hello folks"  
+        name: "test pipeline"
+        command: |
+            echo "hello folks"  
