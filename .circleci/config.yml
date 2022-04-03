@@ -6,12 +6,12 @@ orbs:
 jobs:
   build:
     docker:
-      - image: "cimg/base:2022.03"
-  steps:
-      - node/install
-      - checkout
-      - aws-cli/setup
-      - eb/setup
-      - run: 
-        name: "test pipeline"
-        command: echo "hello folks"  
+      - image: "cimg/base:stable"
+    steps:
+        - node/install
+        - checkout
+        - aws-cli/setup
+        - eb/setup
+        - run: 
+          name: "test pipeline"
+          command: echo "hello folks"  
